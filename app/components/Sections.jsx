@@ -1,5 +1,6 @@
+// app/components/Sections.jsx
 import React from 'react';
-import { FaClipboardCheck, FaDollarSign, FaEnvelope, FaUpload, FaArrowRight } from 'react-icons/fa';
+import { FaClipboardCheck, FaDollarSign, FaEnvelope, FaUpload } from 'react-icons/fa';
 
 const Sections = () => {
   return (
@@ -49,12 +50,12 @@ const Sections = () => {
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-8 bg-gray-50 rounded-lg shadow-md border-t-4 border-indigo-500">
               <h3 className="text-xl font-bold text-gray-900">Starter</h3>
-              <p className="mt-4 text-4xl font-extrabold text-black">$0</p>
+              <p className="mt-4 text-4xl font-extrabold text-black">₹0</p>
               <p className="text-sm text-gray-600">for a single use</p>
               <ul className="mt-6 text-left space-y-2 text-gray-700">
-                <li>✓ 1 Resume Analysis</li>
-                <li>✓ Basic Keyword Suggestions</li>
-                <li>✓ 1 Job Description Match</li>
+                <li>✓ 10 Resume Analysis per day</li>
+                <li>✓  Advanced Keyword Suggestions</li>
+                <li>✓ Limited Job Matches</li>
               </ul>
               <button className="mt-8 w-full py-3 px-6 rounded-full font-semibold border border-gray-300 text-gray-700 hover:bg-gray-100 transition">
                 Start Free
@@ -63,7 +64,7 @@ const Sections = () => {
             {/* Pro Plan */}
             <div className="p-8 bg-gray-50 rounded-lg shadow-md border-t-4 border-indigo-500">
               <h3 className="text-xl font-bold text-gray-900">Pro</h3>
-              <p className="mt-4 text-4xl font-extrabold text-black">Rs 149</p>
+              <p className="mt-4 text-4xl font-extrabold text-black">₹149</p>
               <p className="text-sm text-gray-600">monthly</p>
               <ul className="mt-6 text-left space-y-2 text-gray-700">
                 <li>✓ Unlimited Analysis</li>
@@ -105,20 +106,6 @@ const Sections = () => {
             <span>Contact Us</span>
             <FaEnvelope />
           </a>
-        </div>
-      </div>
-
-      {/* Sign Up Section */}
-      <div id="signup" className="py-20 px-4 bg-white text-center">
-        <div className="max-w-xl mx-auto">
-          <h2 className="text-4xl sm:text-5xl font-bold text-black">Ready to Land Your Dream Job?</h2>
-          <p className="mt-4 text-lg text-gray-700">
-            Create a free account to get started with your first resume analysis.
-          </p>
-          <button className="mt-8 inline-flex items-center space-x-2 py-3 px-8 rounded-full font-semibold bg-gray-900 text-white shadow-lg hover:bg-gray-700 transition">
-            <span>Sign Up Now</span>
-            <FaArrowRight />
-          </button>
         </div>
       </div>
     </>
