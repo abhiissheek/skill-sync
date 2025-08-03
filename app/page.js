@@ -5,7 +5,10 @@ import React, { useState } from 'react';
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Sections from "./components/Sections";
-import SignUpCallToAction from "./components/SignUpCallToAction"; // Import the new component
+import SignUpCallToAction from "./components/SignUpCallToAction"; 
+import JobList from './components/JobList';
+
+
 
 export default function HomePage() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -20,6 +23,10 @@ export default function HomePage() {
 
       {/* Sections component which includes Features, Pricing, Contact */}
       <Sections />
+      <JobList/>
+
+      
+     
 
       {/* Conditionally render the SignUpCallToAction section */}
       {!isLoggedIn && (
